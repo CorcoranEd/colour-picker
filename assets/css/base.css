@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Archer';
+  src: url('../fonts/Archer-Book.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Archer';
+  src: url('../fonts/Archer-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  @apply text-5xl leading-tight font-bold mb-4 font-serif;
+}
+
+h2 {
+  @apply text-4xl leading-tight font-bold mb-4 font-serif;
+}
+
+h3 {
+  @apply text-3xl leading-tight font-bold mb-4 font-serif;
+}
+
+h4 {
+  @apply text-2xl leading-tight font-bold mb-4 font-serif;
+}
+
+h5 {
+  @apply leading-tight font-bold mb-4 font-serif;
+}
+
+h6 {
+  @apply text-sm uppercase leading-tight font-bold mb-2;
+}
+
+p {
+  @apply mb-6;
+}
+
+a {
+  @apply font-medium;
+
+  &:hover,
+  &.nuxt-link-exact-active {
+    @apply underline text-breville;
+  }
+}
+
+ul {
+  @apply list-disc list-outside ml-8 mb-4;
+}
+
+ul li {
+  @apply mb-2;
+}
+
+li p {
+  @apply inline;
+}
+
+input,
+textarea,
+input::placeholder {
+  @apply w-full p-2 text-breville mb-4;
+}
+
+input[type='submit'] {
+  @apply bg-breville text-white font-bold rounded self-end w-auto px-8 py-2;
+}
+
+/* width */
+::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-breville;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-black;
+}
