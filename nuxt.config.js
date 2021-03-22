@@ -46,6 +46,6 @@ export default {
   build: {},
 
   router: {
-    base: '/<repository-name>/',
+    base: '/colour-picker/',
   },
 }
