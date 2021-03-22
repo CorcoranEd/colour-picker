@@ -2,12 +2,12 @@
   <div class="flex flex-col items-center justify-center">
     <img
       v-if="activeColours.trim !== null"
-      :src="`/assets/images/${activeProduct.name}/${activeColours.trim}-${activeColours.base}.png`"
+      :src="`/colour-picker/assets/images/${activeProduct.name}/${activeColours.trim}-${activeColours.base}.png`"
       class="w-2/3"
     />
     <img
       v-else
-      :src="`/assets/images/${activeProduct.name}/base.png`"
+      :src="`/colour-picker/assets/images/${activeProduct.name}/base.png`"
       class="w-2/3"
     />
   </div>
