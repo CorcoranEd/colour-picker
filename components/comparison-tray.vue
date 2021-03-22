@@ -6,7 +6,7 @@
       class="w-1/5 relative"
     >
       <img
-        :src="`/assets/images/${activeProduct.name}/${item.trim}-${item.base}.png`"
+        :src="`/colour-picker/assets/images/${activeProduct.name}/${item.trim}-${item.base}.png`"
       />
       <p class="w-full text-center">{{ item.trim }} {{ item.base }}</p>
       <img
