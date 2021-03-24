@@ -31,7 +31,7 @@ export default {
     ...mapGetters(['products']),
     selectedProduct: {
       get() {
-        return this.$store.state.product
+        return this.$store.state.activeProduct
       },
       set(value) {
         this.$store.dispatch('SET_PRODUCT', value)
