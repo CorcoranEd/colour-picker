@@ -3,7 +3,7 @@
     <div class="flex flex-row justify-between">
       <div class="flex flex-row space-x-2 items-center">
         <img class="h-8" src="@/assets/images/logo.png" />
-        <h5 class="mb-0">Colour Picker</h5>
+        <h5 class="mb-0 whitespace-no-wrap">Colour Picker</h5>
       </div>
       <div class="w-1/4 px-2">
         <select
