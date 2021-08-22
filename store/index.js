@@ -1,48 +1,30 @@
-export const state = () => ({
-  activeProduct: {
-    name: 'toaster',
-    colours: {
-      trim: ['copper'],
-      base: [
-        'BSS',
-        'BTR',
-        'BST',
-        'DBL',
-        'RGP',
-        'OYS',
-        'SST',
-        'GSP',
-        'RVC',
-        'OLT',
-        'ALM',
-      ],
-    },
+const toaster = {
+  name: 'toaster',
+  colours: {
+    trim: ['copper', 'brass'],
+    base: [
+      'BSS',
+      'BTR',
+      'BST',
+      'DBL',
+      'RGP',
+      'OYS',
+      'SST',
+      'GSP',
+      'RVC',
+      'OLT',
+      'ALM',
+    ],
   },
+}
+
+export const state = () => ({
+  activeProduct: toaster,
   activeColours: {
-    trim: 'copper',
+    trim: null,
     base: 'BSS',
   },
-  products: [
-    {
-      name: 'toaster',
-      colours: {
-        trim: ['copper'],
-        base: [
-          'BSS',
-          'BTR',
-          'BST',
-          'DBL',
-          'RGP',
-          'OYS',
-          'SST',
-          'GSP',
-          'RVC',
-          'OLT',
-          'ALM',
-        ],
-      },
-    },
-  ],
+  products: [toaster],
   savedItems: {
     toaster: [],
   },

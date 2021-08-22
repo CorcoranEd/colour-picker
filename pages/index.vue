@@ -1,13 +1,15 @@
 <template>
-  <div class="flex flex-col h-screen max-h-screen overflow-hidden">
-    <top-nav></top-nav>
-    <div class="flex flex-row flex-1 overflow-hidden">
-      <div class="flex flex-col flex-1 w-3/4">
-        <image-view class="flex-1"></image-view>
-        <comparison-tray class="flex-0"></comparison-tray>
-      </div>
-      <option-bar class="flex-0 w-1/4"></option-bar>
+  <div>
+    <top-nav class="fixed top-0 right-0 w-full bg-white"></top-nav>
+
+    <div class="h-screen flex flex-row">
+      <image-view class="max-h-full w-3/4 overflow-hidden"> </image-view>
+      <option-bar class="w-1/4 overflow-scroll"></option-bar>
     </div>
+
+    <comparison-tray
+      class="fixed bottom-0 left-0 w-3/4 bg-white"
+    ></comparison-tray>
   </div>
 </template>
 
