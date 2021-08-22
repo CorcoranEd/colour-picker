@@ -1,6 +1,6 @@
 <template>
-  <div class="border-l border-grey-100 space-y-8 p-4">
-    <div>
+  <div class="border-l border-grey-100 space-y-8">
+    <div class="mt-20 px-4">
       <h6>Trim colour</h6>
       <div class="flex flex-row flex-wrap -mx-2">
         <div
@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="px-4">
       <h6>Body colour</h6>
       <div class="flex flex-row flex-wrap -mx-2">
         <div
@@ -60,7 +60,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="px-4">
       <button
         v-if="activeColours.trim !== null"
         class="bg-breville text-white font-serif font-bold px-4 py-2"
