@@ -10,7 +10,6 @@ const toaster = {
       'RGP',
       'OYS',
       'SST',
-      'GSP',
       'RVC',
       'OLT',
       'ALM',
